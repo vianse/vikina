@@ -28,7 +28,7 @@ end
  private
   def servicios_params
    params.require(:servicios).map do |p|
-   ActionController::Parameters.new(p.to_hash).permit(:titulo, :descripcion,:imagen,:lon,:lat,:direccion,:cp,:telefono,:coreo, :whatsapp, :user_id, :calificacion)
+   ActionController::Parameters.new(p.to_hash).permit(:titulo, :descripcion,:imagen,:lon,:lat,:direccion,:cp,:telefono,:correo, :whatsapp, :user_id, :calificacion)
    end
   end
 end
